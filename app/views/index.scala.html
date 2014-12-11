@@ -1,0 +1,141 @@
+@(message: String)
+
+@main("Meet Symbi.") {
+
+<!DOCTYPE html>
+
+    <html>
+
+        <head>
+            <link rel="stylesheet" href="@routes.Assets.at("stylesheets/bootstrap.css")">
+            <link rel="stylesheet" href="@routes.Assets.at("stylesheets/bootstrap.min.css")">
+            <link rel="stylesheet" href="@routes.Assets.at("stylesheets/main.css")">
+
+        </head>
+
+        <body>
+            <div class="nav">
+                <div class="container">
+                    <ul class="pull-left breadcrumb">
+                        <li><a href="#">Symbi</a></li>
+
+                    </ul>
+                    <ul class="pull-right breadcrumb">
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Sign Up</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="jumbotron">
+                <div class="container">
+                    <h1>Find your perfect roommate.</h1>
+                    <a href="#">Sign up today</a>
+                </div>
+            </div>
+
+
+            <div class="symbi-advantages">
+                <div class="container">
+                    <h3>Here's why Symbi is right for you:</h3>
+
+                    <div class ="row">
+                        <div class="col-md-3">
+                            <div class="thumbnail">
+
+                                <img src="@routes.Assets.at("images/Lock.png")">
+                            </div>
+                        </div>
+                        <div class ="col-md-3">
+                            <div class="thumbnail">
+                                <img src="@routes.Assets.at("images/favorite-user.png")">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="thumbnail">
+                                <img src="@routes.Assets.at("images/data-driven.png")">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="thumbnail">
+                                <img src="@routes.Assets.at("images/sketch-free.png")">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <div class="learn-more">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h3>Flying</h3>
+                            <p>Why be bound to the ground when the air's so much better up here?</p>
+                            <p><a href="#">See how to get started with your newfound wings</a></p>
+                        </div>
+                        <div class="col-md-4">
+                            <h3>Grooming</h3>
+                            <p>Check out our latest tips to keep your mane, wings, and hooves looking their best.</p>
+                            <p><a href="#">Learn beauty tips from our experts.</a></p>
+                        </div>
+                        <div class="col-md-4">
+                            <h3>Connect</h3>
+                            <p>Unicorn life can get a little lonely. Tap into our great community to share your favorite spells, watering holes, and more!</p>
+                            <p><a href="#">Connect with your fellow magical creatures of the forest</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="signup-form">
+                <div class="container">
+                    <div class="row">
+                        <h1>Sign up for our Beta program and get our personalized roommate matching for free (limited time only).</h1>
+                    </div>
+                    <div class="row">
+                        <div>
+                            <form role="form">
+                                <div class="form-group">
+                                    <label for="InputName">Name</label>
+                                    <input type="email" class="form-control" id="InputName" placeholder="Enter name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="InputEmail">Email address</label>
+                                    <input type="email" class="form-control" id="InputEmail" placeholder="Enter email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="InputZipcode">Zip code</label>
+                                    <input type="password" class="form-control" id="InputZipcode" placeholder="Enter zip code">
+                                </div>
+                                <div class="form-group">
+                                    <label for="InputMoveInDate">When do you need a roommate by?</label>
+                                    <input type="MoveInDate" class="form-control" id="InputMoveInDate" placeholder="Enter move-in date/range">
+                                </div>
+                                <div class="form-group">
+                                    <label for="InputIdealRoommate">Describe your ideal roommate.</label>
+                                    <input type="IdealRoommate" class="form-control" id="InputIdealRoommate" placeholder="My ideal roommate is...">
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </body>
+    </html>
+
+    <script type='text/javascript' src='@routes.Assets.at("js/index.js")'></script>
+    <ul id="persons"></ul>
+
+   <form action="@routes.Application.addPerson()" method="post">
+    <input type="text" name="name">
+    <button>Add Person</button>
+   </form>
+
+}

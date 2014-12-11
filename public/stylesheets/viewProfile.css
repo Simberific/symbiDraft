@@ -1,0 +1,13 @@
+.container .jumbotron {
+    background-color: #39b3d7;
+    height: 150px;
+    padding-top:1px;
+    margin-bottom: 5px;
+}
+
+#aboutMe {
+    background-color: #ebebeb;
+}
+
+.red {color: #777777; }
+
