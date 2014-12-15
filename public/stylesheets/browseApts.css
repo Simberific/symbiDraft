@@ -35,47 +35,35 @@ body {
 
 
 /* Images on left side of items: */
-.bg_Lauren
-{
-    background-image:url(../images/userProfilePics/Lauren%20cover.jpg);
-    height: 270px;
-    background-size: cover;
-}
-
 .bg_10Sullivan
 {
-    background: url(../images/10Sullivan.png);
+    background: url(../images/aptProfilePics/10SullivanCover.png);
     height: 300px;
     background-size: cover;
 }
 
-.bg_Megan
-{
-    background: url(../images/userProfilePics/Megan%20cover.jpg)  50% 70% no-repeat;
-    height: 270px;
-    background-size: cover;
-}
 
-.bg_google
+.bg_Google
 {
-    background-image: url(../images/userProfilePics/Google.jpg);
+    background-image: url(../images/aptProfilePics/GoogleCover.jpg);
     height: 300px;
     background-size: cover;
 }
 
-.bg_Simone
+.bg_Joule
 {
-    background: url(../images/userProfilePics/Simone%20cover%202.jpg) 50% 45% no-repeat;
-    height: 270px;
+    background: url(../images/aptProfilePics/JouleCover.jpg) 70% 50% no-repeat;
+    height: 300px;
     background-size: cover;
 }
 
-.bg_Peter
+.bg_Gramercy
 {
-    background: url(../images/userProfilePics/Peter%20cover.jpg) 90% 45% no-repeat;
-    height: 270px;
+    background: url(../images/aptProfilePics/GramercyCover.jpg) 70% 50% no-repeat;
+    height: 300px;
     background-size: cover;
 }
+
 
 .follow_btn {
     text-decoration: none;

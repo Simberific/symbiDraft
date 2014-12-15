@@ -43,5 +43,8 @@ public class Application extends Controller {
     public static Result browseUsers() {
         return ok(browseUsers.render());
     }
+    
+
+    public static Result browseApts() {return ok(browseApts.render());}
 
 }
