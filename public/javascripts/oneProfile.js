@@ -1,6 +1,8 @@
 /**
  * Created by Simone on 12/15/14.
  */
+
+
 $(document).ready(function() {
     var $btnSets = $('#responsive'),
         $btnLinks = $btnSets.find('a');
@@ -48,10 +50,22 @@ $(document).ready(function() {
 
     });
 
+    $("#sliderSmall").slider({
+        animate: 1,
+        value:3,
+        min: 1,
+        max: 5,
+        step: 1,
+        slide: function(event, ui) {
+            update(2,ui.value); //changed
+        }
+    });
 
     //Added, set initial value.
     $("#amount").val(3);
+    $("#amountSmall").val(3);
     $("#amount-label").text(0);
+    $("#amountSmall-label").text(0);
     update();
 });
 
@@ -60,6 +74,7 @@ $(document).ready(function() {
 function update(slider,val) {
     //changed. Now, directly take value from ui.value. if not set (initial, will use current value.)
     var $amount = slider == 1?val:$("#amount").val();
+    var $amountSmall = slider == 2?val:$("#amount").val();
 
     /* commented
      $amount = $( "#slider" ).slider( "value" );
@@ -68,5 +83,8 @@ function update(slider,val) {
 
 
     $('#slider a').html('<label><span class="glyphicon glyphicon-chevron-left"></span> '+$amount+' <span class="glyphicon glyphicon-chevron-right"></span></label>');
+    $('#sliderSmall a').html('<label><span class="glyphicon glyphicon-chevron-left"></span> '+$amountSmall+' <span class="glyphicon glyphicon-chevron-right"></span></label>');
 }
+
+/*Might want to get rid of this at some point after testing on iPhone*/
 $('.ui-slider-handle').draggable();

@@ -275,15 +275,12 @@ div.user-menu div.user-menu-content:not(.active){
 }
 
 /* Rate slider */
-body {
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
+
 
 .price-box {
     margin: 0 auto;
     background: #E9E9E9;
-    border-radius: 10px;
+    border-radius: 0px;
     padding: 40px 15px;
     width: 500px;
 }
@@ -462,4 +459,27 @@ img.payment {
 .slider-subtext {
     font-size: 10px;
     color: #262626;
+}
+
+.body {
+    padding-bottom: 70px;
+}
+#smallNav {
+    height: 140px;
+    padding: 0px;
+}
+
+#smallNav h5 {
+    margin-top:0px;
+    margin-bottom:0px;
+}
+.navbar .navText {
+    padding-bottom:-10px;
+}
+
+@media (max-width: 979px) {
+    body {
+        padding-top: 0px;
+        padding-bottom: 140px;
+    }
 }
