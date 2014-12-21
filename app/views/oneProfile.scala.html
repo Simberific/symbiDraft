@@ -68,28 +68,24 @@
                   <img alt="" title="" src="@routes.Assets.at("images/userProfilePics/Simone.jpg")">
                 </div>
                 <div class="item">
-                  <img alt="" title="" src="@routes.Assets.at("images/userProfilePics/Simone%20cover.jpg")">
+                  <img alt="" title="" src="@routes.Assets.at("images/userProfilePics/Simone%203.jpg")">
                 </div>
                 <div class="item">
                   <img alt="" title="" src="@routes.Assets.at("images/userProfilePics/Simone%20cover%202.jpg")">
                 </div>
-                <div class="item">
-                  <img alt="" title="" src="@routes.Assets.at("images/userProfilePics/Simone%203.jpg")">
-                </div>
               </div>
-                <!-- Indicators -->
-              <ol class="carousel-indicators">
+
+
+              <!-- SMALL Image Indicators -->
+              <ol class="carousel-indicators hidden-sm hidden-md hidden-lg" id="smallImInd">
                 <li class="active" data-slide-to="0" data-target="#article-photo-carousel">
                   <img alt="" src="@routes.Assets.at("images/userProfilePics/Simone.jpg")">
                 </li>
                 <li class="" data-slide-to="1" data-target="#article-photo-carousel">
-                  <img alt="" src="@routes.Assets.at("images/userProfilePics/Simone%20cover.jpg")">
+                  <img alt="" src="@routes.Assets.at("images/userProfilePics/Simone%203.jpg")">
                 </li>
                 <li class="" data-slide-to="2" data-target="#article-photo-carousel">
                   <img alt="" src="@routes.Assets.at("images/userProfilePics/Simone%20cover%202.jpg")">
-                </li>
-                <li class="" data-slide-to="3" data-target="#article-photo-carousel">
-                  <img alt="" src="@routes.Assets.at("images/userProfilePics/Simone%203.jpg")">
                 </li>
               </ol>
             </div>
@@ -97,42 +93,11 @@
           <!-- End images -->
 
         </div>
+      </div>  <!-- End col-7 block-->
 
-        <!-- RATING FOR MD, LG SCREEN SIZES -->
-        <div class="row overview hidden-xs hidden-sm">
-
-          <div class="col-md-12 user-pad text-left">
-            <h3>RATE <small> How much would you like to live with this person?</small></h3>
-              <!-- Slider -->
-
-            <form class="form-horizontal form-pricing" role="form">
-                <!-- Slider itself -->
-              <div class="row">
-                <div class="col-sm-12">
-                  <div id="slider"></div>
-                </div>
-                <br>
-              </div>
-              <input type="hidden" id="amount" class="form-control">
-              <div class="row">
-                <span>Not at all!</span>
-                <span style="float:right">Would love to!</span>
-              </div>
-            </form>
-
-            <div class="form-group">
-              <button type="button" class="btn btn-labeled btn-info" href="#" style="float:right">
-                <span class="btn-text">Submit</span> <span class="glyphicon glyphicon-chevron-right pull-right" style="padding: 5px"></span></button>
-            </div>
-
-              <!-- !Slider -->
-          </div>
-        </div>
-      </div>
-
-      <!-- RIGHT SIDE INFO -->
-      <div class="col-md-1 user-menu-btns">
-        <div class="btn-group-vertical square" id="responsive">
+      <!-- LARGE RIGHT SIDE INFO -->
+      <div class="col-md-1 user-menu-btns hidden-xs">
+        <div class="btn-group btn-group-vertical square" id="responsive">
           <a href="#" class="btn btn-block btn-default active">
             <i class="fa fa-user fa-3x"></i>
           </a>
@@ -146,7 +111,27 @@
             <i class="fa fa-envelope-o fa-3x"></i>
           </a>
         </div>
-      </div>
+      </div> <!-- !Right side info icons -->
+
+      <!-- SMALL RIGHT SIDE INFO -->
+      <div class="col-12 user-menu-btns hidden-sm hidden-md hidden-lg">
+        <div class="btn-group square" id="responsiveSm">
+          <a href="#" class="col-xs-3 col-sm-3 btn btn-default active">
+            <i class="fa fa-user fa-3x"></i>
+          </a>
+          <a href="#" class="col-xs-3 col-sm-3 btn btn-default">
+            <i class="fa fa-home fa-3x"></i>
+          </a>
+          <a href="#" class="col-xs-3 col-sm-3 btn btn-default">
+            <i class="fa fa-cloud-upload fa-3x"></i>
+          </a>
+          <a href="#" class="col-xs-3 col-sm-3 btn btn-default">
+            <i class="fa fa-envelope-o fa-3x"></i>
+          </a>
+        </div>
+      </div> <!-- !Right side info icons -->
+
+      <!-- Expanded right side info -->
       <div class="col-md-4 user-menu user-pad">
         <div class="user-menu-content active">
           <h3>
@@ -241,24 +226,94 @@
 
       </div>
     </div>
-  </div>
 
-  <nav class="navbar navbar-default navbar-fixed-bottom hidden-sm hidden-md hidden-lg" id="smallNav" role="presentation">
-    <div class="container">
-        <!-- RATING -->
-      <div class="row overview">
 
-        <div class="col-md-12 user-pad text-left" style="
-        padding-top: 10px;
-        padding-bottom: 0px;
-        padding-left: 25px;
-        padding-right: 25px;
-        ">
-          <h5>How much would you like to live with this person?</h5>
+    <!-- LARGE Image Indicators -->
+  <div class="row article-slide hidden-xs">
+      <div class="col-md-12">
+        <ol class="carousel-indicators">
+          <li class="active" data-slide-to="0" data-target="#article-photo-carousel">
+            <img alt="" src="@routes.Assets.at("images/userProfilePics/Simone.jpg")">
+          </li>
+          <li class="" data-slide-to="1" data-target="#article-photo-carousel">
+            <img alt="" src="@routes.Assets.at("images/userProfilePics/Simone%203.jpg")">
+          <li class="" data-slide-to="2" data-target="#article-photo-carousel">
+            <img alt="" src="@routes.Assets.at("images/userProfilePics/Simone%20cover%202.jpg")">
+          </li>
+        </ol>
+      </div>
+    </div>
+
+
+    <!-- RATING SLIDER FOR LARGE SCREEN SIZES -->
+      <div class="row overview hidden-xs">
+
+        <div class="col-md-8 user-pad text-left user-details">
+          <h3>RATE <small> How much would you like to live with this person?</small></h3>
             <!-- Slider -->
 
           <form class="form-horizontal form-pricing" role="form">
               <!-- Slider itself -->
+            <div class="row">
+              <div class="col-sm-12">
+                <div id="slider"></div>
+              </div>
+              <br>
+            </div>
+            <input type="hidden" id="amount" class="form-control">
+            <div class="row">
+              <span>Not at all!</span>
+              <span style="float:right">Would love to!</span>
+            </div>
+          </form>
+
+          <div class="form-group">
+            <button type="button" class="btn btn-labeled btn-info" href="#" style="float:right">
+              <span class="btn-text">Submit</span> <span class="glyphicon glyphicon-chevron-right pull-right" style="padding: 5px"></span></button>
+          </div>
+        </div>
+      </div>
+          <!-- !Slider -->
+
+    </div> <!-- Page container -->
+
+    <!-- SMALL RATING -->
+  <nav class="navbar navbar-default navbar-fixed-bottom hidden-sm hidden-md hidden-lg" id="smallNav" role="presentation">
+    <div class="container">
+      <div class="row overview">
+
+        <div class="col-md-12 text-left" id="starRatings" style="
+        padding-top: 10px;
+        ">
+          <h5>How much would you like to live with this person?</h5>
+
+            <!-- SMALL STAR RATING BOXES-->
+          <div class="col-12 user-menu-btns">
+            <div class="btn-group square" id="responsiveSm">
+              <a href="#" class="col-3 btn btn-default active">
+                <i class="fa fa-star-o fa-2x"></i>
+              </a>
+              <a href="#" class="col-2 btn btn-default">
+                <i class="fa fa-star fa-2x"></i>
+              </a>
+              <a href="#" class="col-2 btn btn-default">
+                <i class="fa fa-star fa-2x"></i>
+              </a>
+              <a href="#" class="col-2 btn btn-default">
+                <i class="fa fa-star fa-2x"></i>
+              </a>
+              <a href="#" class="col-2 btn btn-default">
+                <i class="fa fa-star fa-2x"></i>
+              </a>
+              <a href="#" class="col-2 btn btn-default">
+                <i class="fa fa-star fa-2x"></i>
+              </a>
+            </div> 
+          </div> <!-- !Small rating boxes -->
+
+            <!-- Slider
+          <form class="form-horizontal form-pricing" role="form">
+              <!-- Slider itself
             <div class="row">
               <div class="col-sm-12">
                 <div id="sliderSmall" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" aria-disabled="false"><a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 50%;"><label><span class="glyphicon glyphicon-chevron-left"></span> 3 <span class="glyphicon glyphicon-chevron-right"></span></label></a></div>
@@ -271,13 +326,14 @@
               <span class="navText" style="float:right">Would love to!</span>
             </div>
           </form>
+                      <!-- !Slider -->
 
           <div class="form-group">
             <button type="button" class="btn btn-labeled btn-info" href="#" style="float:right;margin-top:0px;">
               <span class="btn-text">Submit</span> <span class="glyphicon glyphicon-chevron-right pull-right" style="padding: 5px"></span></button>
           </div>
 
-            <!-- !Slider -->
+
         </div>
       </div>
     </div>

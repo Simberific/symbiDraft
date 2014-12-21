@@ -31,7 +31,7 @@
 div.user-menu-container {
     z-index: 10;
     background-color: #fff;
-    margin-top: 20px;
+    margin-top: 0px;
     background-clip: padding-box;
     opacity: 0.97;
     filter: alpha(opacity=97);
@@ -66,19 +66,27 @@ div.user-menu-container .btn-group-vertical {
     display: block;
 }
 
-div.user-menu-container .btn-group-vertical>a {
+div.user-menu-container .btn-group>a {
     padding: 20px 25px;
     background-color: #46D8D2;
     color: white;
     border-color: #fff;
+    text-align: center;
+    background-position: center center;
+
 }
 
-div.btn-group-vertical>a:hover {
+div.btn-group>a:hover {
     color: white;
     border-color: white;
 }
 
-div.btn-group-vertical>a.active {
+#starRatings .btn-group>a:not(.active) {
+    background: #46D8D2;
+    border: none;
+}
+
+div.btn-group>a.active {
     background: #FA396F;
     box-shadow: none;
     color: white;
@@ -129,7 +137,11 @@ div.user-menu div.user-menu-content:not(.active){
 /* -- Custom classes for the snippet, won't effect any existing bootstrap classes of your site, but can be reused. -- */
 
 .user-pad {
-    padding: 20px 25px;
+    padding: 5px 25px;
+}
+
+.user-pad h3 {
+    margin-top: 10px;
 }
 
 .no-pad {
@@ -231,7 +243,7 @@ div.user-menu div.user-menu-content:not(.active){
 
 /* Main carousel style */
 .carousel {
-    width: 600px;
+    width: 100%;
 }
 
 /* Indicators list style */
@@ -245,27 +257,31 @@ div.user-menu div.user-menu-content:not(.active){
 .article-slide .carousel-indicators li {
     border: medium none;
     border-radius: 0;
-    float: left;
-    height: 54px;
     margin-bottom: 5px;
     margin-left: 0;
     margin-right: 5px !important;
     margin-top: 0;
-    width: 100px;
+    width: 60px;
+    height: 60px;
 }
 /* Indicators images style */
 .article-slide .carousel-indicators img {
     border: 2px solid #FFFFFF;
     float: left;
-    height: 90px;
+    float: left;
     left: 0;
-    width: 100px;
+    width: 60px;
+    height: 60px;
 }
 /* Indicators active image style */
 .article-slide .carousel-indicators .active img {
     border: 2px solid #428BCA;
-    opacity: 0.7;
 }
+
+/* #smallImInd {
+    width:10px;
+    height: 10px;
+} */
 
 #big-pics img {
     height:400px;
@@ -398,7 +414,10 @@ h4.great {
 
 .form-pricing {
     background: #ffffff;
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom:10px;
+    padding-top:15px;
     border-radius: 4px;
 }
 
@@ -462,10 +481,11 @@ img.payment {
 }
 
 .body {
-    padding-bottom: 70px;
+    padding-bottom: 165px;
 }
 #smallNav {
-    height: 140px;
+    /* height: 145px; //For slider */
+    height:135px;
     padding: 0px;
 }
 
@@ -476,6 +496,22 @@ img.payment {
 .navbar .navText {
     padding-bottom:-10px;
 }
+
+/*
+#smallNav .btn {
+    height: 30px;
+} */
+
+#starRatings {
+    padding-left: 10px;
+    padding-right: 0px;
+}
+
+#starRatings .btn-group {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 
 @media (max-width: 979px) {
     body {
