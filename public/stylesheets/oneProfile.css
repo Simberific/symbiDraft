@@ -66,6 +66,16 @@ div.user-menu-container .btn-group-vertical {
     display: block;
 }
 
+#starRatingButtons > a:not(.active){
+    background-color: #46D8D2;
+    border: none;
+}
+
+#starRatingButtons>a {
+    padding: 6px 8px;
+}
+
+
 div.user-menu-container .btn-group>a {
     padding: 20px 25px;
     background-color: #46D8D2;
@@ -81,11 +91,6 @@ div.btn-group>a:hover {
     border-color: white;
 }
 
-#starRatings .btn-group>a:not(.active) {
-    background: #46D8D2;
-    border: none;
-}
-
 div.btn-group>a.active {
     background: #FA396F;
     box-shadow: none;
@@ -97,6 +102,7 @@ div.user-menu-btns {
     padding-left: 0;
     padding-bottom: 0;
 }
+
 
 div.user-menu-btns div.btn-group-vertical>a.active:after{
     content: '';
@@ -484,14 +490,13 @@ img.payment {
     padding-bottom: 165px;
 }
 #smallNav {
-    /* height: 145px; //For slider */
-    height:135px;
+    height: 110px;
     padding: 0px;
 }
 
 #smallNav h5 {
     margin-top:0px;
-    margin-bottom:0px;
+    margin-bottom:10px;
 }
 .navbar .navText {
     padding-bottom:-10px;
@@ -502,20 +507,24 @@ img.payment {
     height: 30px;
 } */
 
+/*Small star Ratings */
 #starRatings {
-    padding-left: 10px;
-    padding-right: 0px;
+    padding: 10px 10px;
 }
 
-#starRatings .btn-group {
-    padding-top: 10px;
-    padding-bottom: 10px;
+
+
+#submitButton {
+    font-size: 18px;
+
 }
+
+
 
 
 @media (max-width: 979px) {
     body {
         padding-top: 0px;
-        padding-bottom: 140px;
+        padding-bottom: 110px;
     }
 }

@@ -52,8 +52,6 @@
               <h4 class="white"><i class="fa fa-twitter"></i> Simberific</h4>
               <h4 class="white"><i class="fa fa-female"></i> 27 yr old female</h4>
               <h4 class="white"><i class="fa fa-calendar"></i> Move-in: 3/1/15</h4>
-              <button type="button" class="btn btn-labeled btn-info" href="#">
-                <span class="btn-label"><i class="fa fa-heart-o fa-lg"></i></span>Rate</button>
             </div>
           </div>
 
@@ -280,63 +278,47 @@
     <!-- SMALL RATING -->
   <nav class="navbar navbar-default navbar-fixed-bottom hidden-sm hidden-md hidden-lg" id="smallNav" role="presentation">
     <div class="container">
-      <div class="row overview">
+      <div class="row" id="starRatings">
 
-        <div class="col-md-12 text-left" id="starRatings" style="
-        padding-top: 10px;
-        ">
+        <div class="col-md-12 text-left">
           <h5>How much would you like to live with this person?</h5>
+        </div>
 
             <!-- SMALL STAR RATING BOXES-->
-          <div class="col-12 user-menu-btns">
-            <div class="btn-group square" id="responsiveSm">
-              <a href="#" class="col-3 btn btn-default active">
-                <i class="fa fa-star-o fa-2x"></i>
-              </a>
-              <a href="#" class="col-2 btn btn-default">
-                <i class="fa fa-star fa-2x"></i>
-              </a>
-              <a href="#" class="col-2 btn btn-default">
-                <i class="fa fa-star fa-2x"></i>
-              </a>
-              <a href="#" class="col-2 btn btn-default">
-                <i class="fa fa-star fa-2x"></i>
-              </a>
-              <a href="#" class="col-2 btn btn-default">
-                <i class="fa fa-star fa-2x"></i>
-              </a>
-              <a href="#" class="col-2 btn btn-default">
-                <i class="fa fa-star fa-2x"></i>
-              </a>
-            </div> 
+        <div class="col-12" id="starRatingStars">
+          <div class="btn-group btn-group-stars" id="starRatingButtons">
+            <a href="#" class="col-1 btn btn-default">
+              <i class="fa fa-star fa-2x"></i>
+            </a>
+            <a href="#" class="col-1 btn btn-default">
+              <i class="fa fa-star fa-2x"></i>
+            </a>
+            <a href="#" class="col-1 btn btn-default">
+              <i class="fa fa-star fa-2x"></i>
+            </a>
+            <a href="#" class="col-1 btn btn-default">
+              <i class="fa fa-star fa-2x"></i>
+            </a>
+            <a href="#" class="col-1 btn btn-default">
+              <i class="fa fa-star fa-2x"></i>
+            </a>
+          </div>
+          <a href="#" class="col-1 col-xs-push-2 btn btn-default btn-info" id="submitButton">
+            <i class="glyphicon glyphicon-chevron-right"></i>
+          </a>
+
+
+
+            <!-- <div class="form-group">
+              <button type="button" class="btn btn-labeled btn-info" href="#" style="float:right">
+                <span class="glyphicon glyphicon-chevron-right pull-right" style="padding: 5px"></span></button>
+            </div>-->
           </div> <!-- !Small rating boxes -->
 
-            <!-- Slider
-          <form class="form-horizontal form-pricing" role="form">
-              <!-- Slider itself
-            <div class="row">
-              <div class="col-sm-12">
-                <div id="sliderSmall" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" aria-disabled="false"><a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 50%;"><label><span class="glyphicon glyphicon-chevron-left"></span> 3 <span class="glyphicon glyphicon-chevron-right"></span></label></a></div>
-              </div>
-              <br>
-            </div>
-            <input type="hidden" id="amountSmall" class="form-control" value="3">
-            <div class="row">
-              <span class="navText">Not at all!</span>
-              <span class="navText" style="float:right">Would love to!</span>
-            </div>
-          </form>
-                      <!-- !Slider -->
-
-          <div class="form-group">
-            <button type="button" class="btn btn-labeled btn-info" href="#" style="float:right;margin-top:0px;">
-              <span class="btn-text">Submit</span> <span class="glyphicon glyphicon-chevron-right pull-right" style="padding: 5px"></span></button>
-          </div>
 
 
         </div>
       </div>
-    </div>
   </nav>
 
 

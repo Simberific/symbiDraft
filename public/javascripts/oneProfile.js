@@ -17,6 +17,7 @@ $(document).ready(function() {
     });
 });
 
+//Small right side buttons
 // Need to fix this - just added:
 $(document).ready(function() {
     var $btnSets = $('#responsiveSm'),
@@ -31,6 +32,23 @@ $(document).ready(function() {
         $("div.user-menu>div.user-menu-content").eq(index).addClass("active");
     });
 });
+
+// Small star rating buttons
+$(document).ready(function() {
+    var $stars = $('#starRatingButtons').find('a');
+    $stars.click(function(e) {
+        e.preventDefault();
+        var $index = $(this).index();
+
+        $stars.removeClass("active");
+        $stars.each(function(i){
+            if (i <= $index) {
+                $(this).addClass("active");
+            }
+        });
+    });
+});
+
 
 $( document ).ready(function() {
     $("[rel='tooltip']").tooltip();
